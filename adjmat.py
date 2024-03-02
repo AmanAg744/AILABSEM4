@@ -9,10 +9,9 @@ class Graph:
     
 
     def printadjlist(self):
-        for i in range(self.numv):
-            for j in range(self.numv):
-                print(self.adjmat[i][j],end=" ")
-            print("\n")
+        for i in self.adjmat:
+            print(i)
+            
 
 
 g = Graph(5)
