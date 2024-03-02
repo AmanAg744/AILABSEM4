@@ -23,7 +23,7 @@ def get_neighbors(queens):
         
     return neighbors
 
-def nqueenshc(n,board):
+def nqueenshc(board):
     current_board = board
     current_attack = calculateattacks(current_board)
     while current_attack>0:
@@ -51,7 +51,7 @@ n = 8
 board = [1,3,5,7,2,4,6,0]
 
 
-soln = nqueenshc(n,board)
+soln = nqueenshc(board)
 printboard(soln)
 print(soln)
     
